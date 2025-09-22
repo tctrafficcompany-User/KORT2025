@@ -1,0 +1,28 @@
+{
+  "name": "kort",
+  "private": true,
+  "engines": {
+    "node": "20.x"
+  },
+  "packageManager": "pnpm@8.15.4",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.10",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "next-intl": "3.16.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.19",
+    "postcss": "8.4.38",
+    "tailwindcss": "3.4.9",
+    "typescript": "5.5.4",
+    "@types/node": "20.12.12",
+    "@types/react": "18.2.74",
+    "@types/react-dom": "18.2.24"
+  }
+}

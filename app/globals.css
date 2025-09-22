@@ -1,0 +1,22 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+body { @apply min-h-screen bg-bg text-ink; }
+.container { @apply mx-auto max-w-5xl px-4; }
+.bgflow { position:absolute; inset:0; pointer-events:none; opacity:.35;
+  background: radial-gradient(60% 60% at 20% 20%, #394554 0%, rgba(57,69,84,0) 60%),
+              radial-gradient(60% 60% at 80% 30%, #2e3844 0%, rgba(46,56,68,0) 60%),
+              radial-gradient(60% 60% at 50% 80%, #171b22 0%, rgba(23,27,34,0) 60%);
+  filter: blur(40px); animation: float 18s ease-in-out infinite alternate;
+}
+@keyframes float { 0% { transform: translate3d(0,0,0) scale(1) } 100% { transform: translate3d(0,-2%,0) scale(1.03) } }
+.btn { @apply inline-block border border-brand-700 rounded-xl px-4 py-2; }
+.btn-primary { @apply bg-brand-800; }
+.card { @apply rounded-2xl bg-bg/40 ring-1 ring-white/5 p-5; }
+.mute { @apply text-ink/mute; }
+.header { @apply border-b border-white/5 sticky top-0 z-50 backdrop-blur bg-bg/80; }
+.nav { @apply container flex h-14 items-center gap-6; }
+.footer { @apply border-t border-white/5 mt-20; }
